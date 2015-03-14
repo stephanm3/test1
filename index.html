@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+
+  <meta charset="utf-8">
+
+<!-- external Styling -->
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- internal Styling -->
+<style>
+  body {background-color:lightgray}
+  h1   {color:blue}
+  p    {color:green}
+</style>
+
+
+</head>
+
+<body>
+  <h1>This is a Heading</h1>
+
+  <!-- Inline Styling (Inline CSS) -->
+  <h2 style="color:red">This is a H2 Heading</h2>
+
+  <!-- using external styles -->
+  <h3>This is a H3 Heading</h3>
+
+  <div id="demo">xxx</div>
+
+  <p>This is a paragraph.</p>
+
+  <img src="pics/smiley.gif" alt="Smiley face" height="42" width="42">
+
+  <div class="loading"></div>
+
+  <ul id=items>
+    <li>List item 1 <span class=delete>DELETE</span></li>
+    <li>List item 2 <span class=delete>DELETE</span></li>
+  </ul>
+ 
+
+
+<script>
+  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+
+
+<!--
+<script src=js/zepto.min.js></script>
+
+<script>
+  $('#demo').animate({
+    opacity: 0.50, top: '30px', color: '#656565'
+  }, 0.5);
+</script>
+
+<script>
+// show delete buttons on swipe
+$('#items li').swipe(function(){
+  $('.delete').hide()
+  $('.delete', this).show()
+})
+ 
+// delete row on tapping delete button
+$('.delete').tap(function(){
+  $(this).parent('li').remove()
+})
+</script>
+-->
+
+
+
+</body>
+
+</html>
